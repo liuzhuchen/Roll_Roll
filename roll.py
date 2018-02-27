@@ -1,27 +1,25 @@
 import tkinter as tk
-import numpy as np
+#import numpy as np
 import random
 
 roll = tk.Tk()
 roll.title('ROLL THE DICE')
 roll.geometry('400x400')
 l = tk.Label(roll,
-    text='选择困难吃饭Roll点',    # 标签的文字
-    bg='white',     # 背景颜色
-    font=('Times New Roman', 20),     # 字体和字体大小
-    width=400, height=2  # 标签长宽
+    text='Roll the dice',
+    bg='white',
+    font=('Times New Roman', 20),
+    width=400, height=2
     )
 l.pack()
 
 var=tk.StringVar()
 chat = tk.Label(roll,
                 textvariable=var,
-                font=('Times New Roman', 20),     # 字体和字体大小
+                font=('Times New Roman', 20),
                 bg='white',
                 width=400,height=2
                 )
-
-#chat.place(x=100, y=100)
 chat.pack()
 
 def roll_button():
