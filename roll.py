@@ -14,13 +14,13 @@ l = tk.Label(roll,
 l.pack()
 
 var=tk.StringVar()
-chat = tk.Label(roll,
+roll_number = tk.Label(roll,
                 textvariable=var,
                 font=('Times New Roman', 20),
                 bg='white',
                 width=400,height=2
                 )
-chat.pack()
+roll_number.pack()
 
 def roll_button():
     number = random.randint(0,99)
